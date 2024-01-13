@@ -1,6 +1,8 @@
 name: DiscoveryAutoCancel 
 
 on:
+  schedule:
+    - cron: '*/30 7-21 * * *'
   push:
     branches:
       - main # Execute on every push
